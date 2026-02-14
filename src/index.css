@@ -18,11 +18,13 @@
 
 a {
   font-weight: 500;
-  text-decoration: inherit;
+  text-decoration: none;
   color: inherit;
 }
 a:hover {
   color: #D3D3D3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 
