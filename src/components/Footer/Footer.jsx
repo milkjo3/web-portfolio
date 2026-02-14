@@ -20,7 +20,7 @@ export default function Footer() {
                     href="https://www.github.com/milkjo3" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
                 <li><a 
                     href="https://www.linkedin.com/in/joseph-milliken/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
-                <li><a href="" aria-label="CV/Resume">CV/Resume</a></li>
+                <li><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">CV/Resume</a></li>
               </ul>
 
             </div>
@@ -31,7 +31,6 @@ export default function Footer() {
             <h3>Get in touch</h3>
             <hr />
             <form className="contact-form">
-                <input type='text' placeholder='Name'/>
                 <input type="email" placeholder="Enter email" />
                 <textarea placeholder="Message" />
                 <button type="button">Send</button>

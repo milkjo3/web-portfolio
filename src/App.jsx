@@ -10,7 +10,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <div>
-        <h1>Software Engineer building secure and scalable systems.</h1>
+        <h1>Software Engineer building secure and scalable applications.</h1>
       </div>
       <Footer></Footer>
     </>

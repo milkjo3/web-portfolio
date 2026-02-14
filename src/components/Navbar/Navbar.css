@@ -14,7 +14,10 @@
 .nav-bar p {
     margin: 0;
 }
-
+.nav-name:hover {
+  text-decoration: none;
+  color:inherit;
+}
 .nav-links {
   display: flex;
   gap: 20px;
