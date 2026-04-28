@@ -10,7 +10,7 @@
   --brick-red: #c1121fff;
   --papaya-whip: #fdf0d5ff;
   --deep-space-blue: #003049ff;
-  --steel-blue: #669bbcff;
+  --steel-blue: #003049ff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #d3d3d3;
+  color: var(--molten-lava);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
