@@ -1,14 +1,16 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, Inter;
   line-height: 1.5;
   font-weight: 400;
 
-  /* tell browser we support both */
-  color-scheme: light dark;
+  background: #fdf0d5ff;
+  color: var(--deep-space-blue);
 
-  /* LIGHT = default */
-  color: #2a2a2a;
-  background-color: #ffffff;
+  --molten-lava: #780000ff;
+  --brick-red: #c1121fff;
+  --papaya-whip: #fdf0d5ff;
+  --deep-space-blue: #003049ff;
+  --steel-blue: #669bbcff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,11 +24,10 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #D3D3D3;
+  color: #d3d3d3;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-
 
 body {
   margin: 0;
@@ -54,22 +55,9 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #D3D3D3;
+  border-color: #d3d3d3;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-
-/* DARK MODE ONLY */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #2a2a2a;
-  }
-
-  button {
-    background-color: #2a2a2a;
-  }
 }
