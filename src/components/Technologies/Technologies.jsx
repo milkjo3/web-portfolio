@@ -1,17 +1,20 @@
 import "./Technologies.css";
-import { Link } from "react-router-dom";
-const logos = [
-  "/logos/python.svg",
-  "/logos/docker.svg",
-  "/logos/react.svg",
-  "/logos/aws.svg",
-  "/logos/github.svg",
-  "/logos/cpp.svg",
-  "/logos/js.svg",
-  "/logos/mongodb.svg",
-  "/logos/nodejs.svg",
-  "/logos/express.svg",
+const logoFiles = [
+  "python.svg",
+  "docker.svg",
+  "react.svg",
+  "aws.svg",
+  "github.svg",
+  "cpp.svg",
+  "js.svg",
+  "mongodb.svg",
+  "nodejs.svg",
+  "express.svg",
 ];
+
+const logos = logoFiles.map(
+  (file) => `${import.meta.env.BASE_URL}logos/${file}`,
+);
 
 export default function Technologies() {
   return (
