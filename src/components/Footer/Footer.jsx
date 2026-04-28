@@ -1,6 +1,23 @@
 import "./Footer.css";
+import { useState } from "react";
 
 export default function Footer() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "0b437fa1-42e7-4ff9-947a-c19f959adda9");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
+
   return (
     <footer className="footer">
       <div className="container">
@@ -53,10 +70,15 @@ export default function Footer() {
           <section className="right">
             <h3>Get in touch</h3>
             <hr />
-            <form className="contact-form">
-              <input type="email" placeholder="Enter email" />
-              <textarea placeholder="Message" />
-              <button type="button">Send</button>
+            <form className="contact-form" onSubmit={onSubmit}>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter email"
+                required
+              />
+              <textarea name="message" placeholder="Message" required />
+              <button type="submit">Send</button>
             </form>
           </section>
         </div>
