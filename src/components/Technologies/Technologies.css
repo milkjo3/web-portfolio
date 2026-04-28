@@ -1,0 +1,46 @@
+.technologies {
+  padding: 50px 40px 40px;
+  text-align: left;
+}
+
+.technologies-text h2 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.technologies-text p {
+  padding-top: 0px;
+  margin-top: 0;
+  opacity: 0.85;
+}
+
+.technologies-carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.technologies-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: max-content;
+  animation: scrollLogos 25s linear infinite;
+}
+
+.tech-logo {
+  height: 70px;
+  width: auto;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
