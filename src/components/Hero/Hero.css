@@ -1,0 +1,36 @@
+.hero {
+  background-color: var(--deep-space-blue);
+  display: flex;
+  padding: 100px 40px;
+  align-items: center;
+  font-size: 1.1em;
+  gap: 60px;
+}
+
+.hero-text {
+  color: white;
+  text-align: left;
+}
+
+.hero-text p {
+  opacity: 0.85;
+}
+
+.hero-text button {
+  background-color: var(--brick-red);
+  font-weight: 600;
+  color: var(--papaya-whip);
+}
+
+.hero-image {
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
