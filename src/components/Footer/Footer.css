@@ -65,7 +65,7 @@
 .contact-form button {
   width: fit-content;
   color: var(--deep-space-blue);
-  border: 1px solid var(--deep-space-blue);
+  border: 1px solid var(--papaya-whip);
   border-radius: 10px;
   padding: 0.7rem 0.9rem;
   cursor: pointer;
