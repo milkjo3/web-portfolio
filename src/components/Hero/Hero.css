@@ -34,3 +34,25 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 32px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+  }
+
+  .hero-image img {
+    aspect-ratio: 4/3;
+  }
+}
