@@ -15,7 +15,12 @@ export default function Footer() {
     });
 
     const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+
+    setResult(
+      data.success
+        ? "Thanks, your message was received. I'll get back to you soon."
+        : "Something went wrong. Please try again.",
+    );
   };
 
   return (
@@ -68,7 +73,7 @@ export default function Footer() {
           </section>
 
           <section className="right">
-            <h3>Get in touch</h3>
+            <h3>GET IN TOUCH</h3>
             <hr />
             <form className="contact-form" onSubmit={onSubmit}>
               <input
@@ -79,6 +84,8 @@ export default function Footer() {
               />
               <textarea name="message" placeholder="Message" required />
               <button type="submit">Send</button>
+
+              {result && <p className="form-status">{result}</p>}
             </form>
           </section>
         </div>
