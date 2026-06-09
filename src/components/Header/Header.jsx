@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <>
       <div className="nav-bar">
-        <h1 className="nav-name">JM.EXE</h1>
+        <h1 className="nav-name">
+          <Link to="/">JM.EXE</Link>
+        </h1>
 
         <button
           className={`hamburger ${menu ? "open" : ""}`}
