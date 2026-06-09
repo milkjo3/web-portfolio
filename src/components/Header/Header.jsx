@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       <div className="nav-bar">
-        <h1 className="nav-name">JOSEPH MILLIKEN</h1>
+        <h1 className="nav-name">JM.EXE</h1>
 
         <button
           className={`hamburger ${menu ? "open" : ""}`}

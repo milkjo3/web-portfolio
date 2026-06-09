@@ -11,8 +11,8 @@ export default function Hero() {
             SOFTWARE ENGINEER
           </h2>
           <p>
-            I'm <strong>Joseph</strong>, a recent graduate with a B.S. in
-            Computer Science. I build scalable, production-ready applications
+            I'm <strong>Joseph Milliken</strong>, a recent graduate with a B.S.
+            in Computer Science. I build scalable, production-ready applications
             focused on performance and real-world impact.
           </p>
           <button>VIEW PROJECTS</button>

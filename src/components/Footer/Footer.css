@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgba(0, 48, 73, 0.8);
+  background-color: var(--deep-space-blue);
   color: white;
   padding: 2rem 1rem;
 }
