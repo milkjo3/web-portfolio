@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Header/Header";
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Technologies from "./components/Technologies/Technologies";
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <Header></Header>
       <Routes>
         <Route
           path="/"
