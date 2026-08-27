@@ -28,7 +28,7 @@ const projectThree = {
 export default function Projects() {
   return (
     <>
-      <div className="projects">
+      <div className="projects" id="projects">
         <div className="projects-text">
           <h2>PROJECTS</h2>
           <p>

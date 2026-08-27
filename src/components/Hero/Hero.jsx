@@ -1,5 +1,4 @@
 import "./Hero.css";
-import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -15,7 +14,6 @@ export default function Hero() {
             in Computer Science. I build secure, scalable, production-ready
             applications focused on performance and real-world impact.
           </p>
-          <button>VIEW PROJECTS</button>
         </div>
         <div className="hero-image">
           <img
@@ -23,6 +21,12 @@ export default function Hero() {
             alt=""
           />
         </div>
+
+        <a className="hero-scroll-link" href="#projects">
+          <span className="hero-scroll-arrow" aria-hidden="true">
+            ↓
+          </span>
+        </a>
       </div>
     </>
   );
