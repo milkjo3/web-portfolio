@@ -36,6 +36,8 @@
   isolation: isolate;
 }
 
+
+/* Awesome CSS animation from https://codepen.io/abdelRhman345/pen/PXMmdv under the MIT license.*/
 .nav-links a::before,
 .nav-links a::after {
   content: "";
