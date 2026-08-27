@@ -36,14 +36,6 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #ffffff;
-  border-bottom: 2px solid var(--deep-space-blue);
-}
-
 body {
   margin: 0;
   min-width: 320px;
@@ -75,4 +67,71 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#projects {
+  scroll-margin-top: 80px;
+}
+
+.hero {
+  position: relative;
+  background-color: var(--deep-space-blue);
+  display: flex;
+  padding: 100px 40px 80px;
+  align-items: center;
+  font-size: 1.1em;
+  gap: 60px;
+}
+
+.hero-scroll-link {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.hero-scroll-link:hover {
+  text-decoration: none;
+}
+
+.hero-scroll-arrow {
+  font-size: 1.5rem;
+}
+
+.hero-scroll-link span:last-child {
+  font-size: 1.5rem;
+  animation: arrow-bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes arrow-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-scroll-link span:last-child {
+    animation: none;
+  }
 }
