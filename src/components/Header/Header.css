@@ -1,9 +1,24 @@
 .nav-bar {
+  position: sticky;
+  top: 16px;
+  z-index: 100;
+
+  width: calc(100% - 32px);
+  margin: 16px auto;
+  padding: 0px 30px;
+  box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 30px;
+
   color: var(--deep-space-blue);
+  background-color: rgba(255, 255, 255, 0.96);
+  border: 2px solid var(--deep-space-blue);
+  
+  box-shadow: 0 8px 24px rgba(0, 48, 73, 0.12);
+
+  backdrop-filter: blur(10px);
 }
 
 .nav-links {
@@ -105,8 +120,10 @@
 
 @media (max-width: 768px) {
   .nav-bar {
-    position: relative;
-    padding: 0px 24px;
+    top: 8px;
+    width: calc(100% - 16px);
+    margin: 8px auto;
+    padding: 8px 16px;
   }
 
   .nav-name {
