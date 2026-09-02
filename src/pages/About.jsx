@@ -62,7 +62,7 @@ export default function About() {
           <h2>BEYOND CODE</h2>
 
           <p>
-            Outside of development, I enjoy competitive and creative games, from
+            Outside of development, I enjoy competitive and creative games, from{" "}
             <em>League of Legends</em> to <em>Super Mario 64</em>, as well as
             visually imaginative stories like <em>Arcane</em> and{" "}
             <em>One Piece</em>. I also enjoy hiking and photography, which give

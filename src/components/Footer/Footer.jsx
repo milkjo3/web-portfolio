@@ -61,7 +61,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/resume.pdf"
+                    href="resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
