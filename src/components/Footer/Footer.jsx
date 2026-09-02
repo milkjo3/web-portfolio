@@ -89,6 +89,10 @@ export default function Footer() {
             </form>
           </section>
         </div>
+        <p className="copyright-text">
+          © 2026 Joseph Milliken. Built with curiosity, creativity, and a love
+          for code.
+        </p>
       </div>
     </footer>
   );
