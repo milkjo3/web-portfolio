@@ -7,8 +7,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="nav-bar">
-        <h1 className="nav-name">JM.EXE</h1>
+      <header className="nav-bar">
+        <h3 className="nav-name">
+          <Link to="/">JOSEPH.exe</Link>
+        </h3>
 
         <button
           className={`hamburger ${menu ? "open" : ""}`}
@@ -21,12 +23,15 @@ export default function Header() {
 
         {menu && <div className="overlay" onClick={() => setMenu(false)} />}
 
-        <div className={`nav-links ${menu ? "open" : ""}`}>
+        <nav
+          className={`nav-links ${menu ? "open" : ""}`}
+          aria-label="Primary navigation"
+        >
           <Link to="/about">ABOUT</Link>
           <Link to="/projects">PROJECTS</Link>
           <Link to="/contact">CONTACT</Link>
-        </div>
-      </div>
+        </nav>
+      </header>
     </>
   );
 }

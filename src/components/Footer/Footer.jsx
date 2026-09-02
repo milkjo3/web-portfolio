@@ -83,12 +83,16 @@ export default function Footer() {
                 required
               />
               <textarea name="message" placeholder="Message" required />
-              <button type="submit">Send</button>
+              <button type="submit">CONTACT ME</button>
 
               {result && <p className="form-status">{result}</p>}
             </form>
           </section>
         </div>
+        <p className="copyright-text">
+          © 2026 Joseph Milliken. Built with curiosity, creativity, and a love
+          for code.
+        </p>
       </div>
     </footer>
   );

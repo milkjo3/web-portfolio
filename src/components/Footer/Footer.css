@@ -19,6 +19,12 @@
   display: flex;
   flex-direction: column;
 }
+.right {
+  background-color: #ffffff;
+  color: var(--deep-space-blue);
+  border: 2px solid black;
+  padding: 0px 30px 30px 30px;
+}
 
 .left-bottom {
   margin-top: auto;
@@ -50,26 +56,75 @@
 .contact-form input,
 .contact-form textarea {
   background: #ffffff;
-  border: 1px solid var(--papaya-whip);
+  border-top: none;
+  border-left: 1px solid var(--deep-space-blue);
+  border-bottom: 1px solid var(--deep-space-blue);
+  border-right: none;
   color: var(--deep-space-blue);
-  border-radius: 10px;
   padding: 0.7rem 0.9rem;
   font: inherit;
 }
 
 .contact-form textarea {
   min-height: 110px;
-  resize: horizontal;
+  resize: none;
 }
 
 .contact-form button {
   width: fit-content;
   color: var(--deep-space-blue);
-  border: 1px solid var(--papaya-whip);
-  border-radius: 10px;
+  border: 1px solid var(--deep-space-blue);
+  border-radius: 0px;
   padding: 0.7rem 0.9rem;
   cursor: pointer;
+
+  position: relative;
+  display: block;
+  isolation: isolate;
+  transition: color 0.3s ease;
 }
+
+/* Awesome CSS animation from https://codepen.io/abdelRhman345/pen/PXMmdv under the MIT license.*/
+.contact-form button::before,
+.contact-form button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-form button::before {
+  inset-block: 0px;
+  border-top: 2px solid var(--deep-space-blue);
+  border-bottom: 2px solid var(--deep-space-blue);
+  transform: scaleY(1.35);
+}
+
+.contact-form button::after {
+  top: 2px;
+  height: calc(100% - 2px);
+  background-color: var(--deep-space-blue);
+  transform: scaleY(0);
+  z-index: -1;
+}
+
+.contact-form button:hover,
+.contact-form button:focus-visible {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-form button:hover::before, 
+.contact-form button:hover::after,
+.contact-form button:focus-visible::before,
+.contact-form button:focus-visible::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+
 
 .stack {
   margin-bottom: 0.75rem;
@@ -93,4 +148,20 @@
   .social {
     flex-wrap: wrap;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-form button,
+  .contact-form button::before,
+  .contact-form button::after {
+    transition: none;
+  }
+}
+
+.footer .copyright-text {
+  color: lightgray;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 2rem 0px 0px 0px;
+  padding: 0;
 }
