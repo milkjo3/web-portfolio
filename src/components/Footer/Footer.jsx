@@ -90,8 +90,8 @@ export default function Footer() {
           </section>
         </div>
         <p className="copyright-text">
-          © 2026 Joseph Milliken. Built with curiosity, creativity, and a love
-          for code.
+          © {new Date().getFullYear()} Joseph Milliken. Built with curiosity,
+          creativity, and a love for code.
         </p>
       </div>
     </footer>
