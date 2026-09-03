@@ -15,7 +15,7 @@ export default function About() {
         </div>
         <div className="about-hero-image">
           <img
-            src="${import.meta.env.BASE_URL}selfie.png"
+            src={`${import.meta.env.BASE_URL}selfie.png`}
             alt="Portrait of Joseph Milliken"
           />
         </div>
@@ -24,7 +24,7 @@ export default function About() {
       <div className="about-content">
         <figure className="about-personal-photo">
           <img
-            src="${import.meta.env.BASE_URL}flower.jpeg"
+            src={`${import.meta.env.BASE_URL}flower.jpeg`}
             alt="Green hydrangeas blooming among dense leaves"
           />
           <figcaption>
@@ -53,7 +53,7 @@ export default function About() {
         </section>
         <figure className="about-personal-photo">
           <img
-            src="${import.meta.env.BASE_URL}odawara.jpeg"
+            src={`${import.meta.env.BASE_URL}/odawara.jpeg`}
             alt="A street in Odawara lined with signs, lanterns, and overhead wires"
           />
           <figcaption>

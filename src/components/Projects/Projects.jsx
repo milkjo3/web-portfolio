@@ -6,7 +6,7 @@ const claraProject = {
   title: "CLARA",
   description:
     "AI-based second opinion tool for pathologists to make better, more accurate clinical decisions. Project won 1st Place among Computer Science teams at the College of Engineering Senior Capstone Expo",
-  image: "CLARA.png",
+  image: `${import.meta.env.BASE_URL}/CLARA.png`,
   technologies: ["Python", "React.js", "MongoDB", "Node.js", "AWS S3"],
 };
 
@@ -14,7 +14,7 @@ const transferrProject = {
   title: "transferr",
   description:
     "A peer-to-peer file transfer system is designed to enable fast, scalable, and resilient data exchange directly between users without relying on a central server. ",
-  image: "transferr.png",
+  image: `${import.meta.env.BASE_URL}/transferr.png`,
   technologies: ["C#", "Avalonia UI", "TCP/IP"],
 };
 
