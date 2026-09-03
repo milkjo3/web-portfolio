@@ -27,9 +27,9 @@ export default function Header() {
           className={`nav-links ${menu ? "open" : ""}`}
           aria-label="Primary navigation"
         >
-          <Link to="/about">ABOUT</Link>
-          <Link to="/projects">PROJECTS</Link>
-          <Link to="/contact">CONTACT</Link>
+          <a href="#about">ABOUT</a>
+          <a href="#projects">PROJECTS</a>
+          <a href="#contact">CONTACT</a>
         </nav>
       </header>
     </>

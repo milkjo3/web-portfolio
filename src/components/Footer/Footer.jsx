@@ -75,7 +75,7 @@ export default function Footer() {
           <section className="right">
             <h3>GET IN TOUCH</h3>
             <hr />
-            <form className="contact-form" onSubmit={onSubmit}>
+            <form className="contact-form" id="contact" onSubmit={onSubmit}>
               <input
                 type="email"
                 name="email"

@@ -3,7 +3,7 @@ import "./About.css";
 export default function About() {
   return (
     <>
-      <div className="about-hero">
+      <div className="about-hero" id="about">
         <div className="about-hero-text">
           <h1>ABOUT ME</h1>
           <p>
@@ -37,8 +37,7 @@ export default function About() {
             and Secure Computing. I enjoy breaking down difficult problems,
             understanding how systems work, and turning ideas into reliable
             software. I'm especially motivated by projects that have a
-            meaningful real-world purpose and help build a more useful, secure
-            future.
+            meaningful real-world purpose and help build a better future.
           </p>
 
           <p>

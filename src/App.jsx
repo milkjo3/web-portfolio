@@ -22,10 +22,10 @@ function App() {
               <Hero></Hero>
               <Projects></Projects>
               <Technologies></Technologies>
+              <About></About>
             </>
           }
         />
-        <Route path="/about" element={<About></About>} />
       </Routes>
       <Footer></Footer>
     </>
