@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
-
 export default function ProjectCard({
   className = "",
   title,
   description,
   image,
+  technologies = [],
 }) {
   return (
     <>
@@ -14,8 +13,21 @@ export default function ProjectCard({
         </div>
 
         <div className="project-card-text">
-          <h3>{title}</h3>
-          <p>{description}</p>
+          <div className="project-card-summary">
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
+
+          {technologies.length > 0 && (
+            <ul
+              className="project-technologies"
+              aria-label={`${title} technologies`}
+            >
+              {technologies.map((technology) => (
+                <li key={technology}>{technology}</li>
+              ))}
+            </ul>
+          )}
         </div>
       </article>
     </>
