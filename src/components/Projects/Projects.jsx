@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import "./Projects.css";
 import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 
@@ -18,6 +19,32 @@ const transferrProject = {
 };
 
 export default function Projects() {
+  const projectsGridRef = useRef(null);
+  const [projectsVisible, setProjectsVisible] = useState(false);
+
+  useEffect(() => {
+    const projectsGrid = projectsGridRef.current;
+
+    if (!projectsGrid) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setProjectsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.2,
+        rootMargin: "0px 0px -10% 0px",
+      },
+    );
+
+    observer.observe(projectsGrid);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <div className="projects" id="projects">
@@ -29,7 +56,12 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="projects-grid">
+      <div
+        ref={projectsGridRef}
+        className={`projects-grid ${
+          projectsVisible ? "projects-grid--visible" : ""
+        }`}
+      >
         <ProjectCard className="project-card--featured" {...claraProject} />
         <ProjectCard className="project-card--side" {...transferrProject} />
       </div>
