@@ -11,7 +11,9 @@ export default function Header() {
     <>
       <header className="nav-bar">
         <h3 className="nav-name">
-          <Link to="/">JOSEPH.exe</Link>
+          <a href="#top" onClick={closeMenu}>
+            JOSEPH.exe
+          </a>
         </h3>
 
         <button

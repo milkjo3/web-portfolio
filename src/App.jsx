@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+      <div id="top" aria-hidden="true" />
       <Header></Header>
       <Routes>
         <Route
