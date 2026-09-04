@@ -17,8 +17,12 @@ export default function Hero() {
         </div>
         <div className="hero-image">
           <img
-            src="https://cdn.thenewstack.io/media/2026/03/f130d45c-code-input-1024x819.jpg"
-            alt=""
+            src={`${import.meta.env.BASE_URL}dan-counsell-unsplash-1600.webp`}
+            width="1600"
+            height="1067"
+            fetchPriority="high"
+            decoding="async"
+            alt="A creative computer workspace with gaming and software equipment"
           />
         </div>
 
