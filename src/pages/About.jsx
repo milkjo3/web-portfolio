@@ -5,7 +5,7 @@ export default function About() {
     <>
       <div className="about-hero" id="about">
         <div className="about-hero-text">
-          <h1>ABOUT ME</h1>
+          <h2>ABOUT ME</h2>
           <p>
             I’m a software engineer who enjoys solving difficult problems and
             turning thoughtful ideas into secure, reliable applications. I’m

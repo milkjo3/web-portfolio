@@ -5,6 +5,8 @@ import "./Header.css";
 export default function Header() {
   const [menu, setMenu] = useState(false);
 
+  const closeMenu = () => setMenu(false);
+
   return (
     <>
       <header className="nav-bar">
@@ -14,24 +16,35 @@ export default function Header() {
 
         <button
           className={`hamburger ${menu ? "open" : ""}`}
-          onClick={() => setMenu(!menu)}
+          onClick={() => setMenu((currentMenu) => !currentMenu)}
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        {menu && <div className="overlay" onClick={() => setMenu(false)} />}
-
         <nav
           className={`nav-links ${menu ? "open" : ""}`}
           aria-label="Primary navigation"
         >
-          <a href="#about">ABOUT</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#contact">CONTACT</a>
+          <a href="#projects" onClick={closeMenu}>
+            PROJECTS
+          </a>
+          <a href="#about" onClick={closeMenu}>
+            ABOUT
+          </a>
+          <a href="#contact" onClick={closeMenu}>
+            CONTACT
+          </a>
         </nav>
       </header>
+      {menu && (
+        <div
+          className="overlay"
+          onClick={() => setMenu(false)}
+          aria-hidden="true"
+        />
+      )}
     </>
   );
 }

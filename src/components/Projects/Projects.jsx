@@ -5,7 +5,7 @@ import ProjectCard from "../ProjectCard/ProjectCard.jsx";
 const claraProject = {
   title: "CLARA",
   description:
-    "AI-based second opinion tool for pathologists to make better, more accurate clinical decisions. Project won 1st Place among Computer Science teams at the College of Engineering Senior Capstone Expo",
+    "AI-based second opinion tool for pathologists to make better, more accurate clinical decisions. Project won 1st Place among Computer Science teams at the College of Engineering Senior Capstone Expo.",
   image: `${import.meta.env.BASE_URL}/CLARA.png`,
   technologies: ["Python", "React.js", "MongoDB", "Node.js", "AWS S3"],
 };

@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="container">
         <div className="footer-grid">
           <section className="left">
@@ -75,7 +75,7 @@ export default function Footer() {
           <section className="right">
             <h3>GET IN TOUCH</h3>
             <hr />
-            <form className="contact-form" id="contact" onSubmit={onSubmit}>
+            <form className="contact-form" onSubmit={onSubmit}>
               <input
                 type="email"
                 name="email"
