@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
@@ -9,8 +8,6 @@ import Technologies from "./components/Technologies/Technologies";
 import About from "./pages/About";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div id="top" aria-hidden="true" />
