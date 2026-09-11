@@ -53,7 +53,7 @@ export default function About() {
         </section>
         <figure className="about-personal-photo">
           <img
-            src={`${import.meta.env.BASE_URL}/odawara.jpeg`}
+            src={`${import.meta.env.BASE_URL}odawara.jpeg`}
             alt="A street in Odawara lined with signs, lanterns, and overhead wires"
           />
           <figcaption>
