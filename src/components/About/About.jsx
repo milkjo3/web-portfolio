@@ -15,7 +15,7 @@ export default function About() {
         </div>
         <div className="about-hero-image">
           <img
-            src={`${import.meta.env.BASE_URL}selfie.png`}
+            src={`${import.meta.env.BASE_URL}selfie.webp`}
             alt="Portrait of Joseph Milliken"
           />
         </div>
