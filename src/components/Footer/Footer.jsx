@@ -85,7 +85,11 @@ export default function Footer() {
               <textarea name="message" placeholder="Message" required />
               <button type="submit">CONTACT ME</button>
 
-              {result && <p className="form-status">{result}</p>}
+              {result && (
+                <p className="form-status" aria-live="polite">
+                  {result}
+                </p>
+              )}
             </form>
           </section>
         </div>
